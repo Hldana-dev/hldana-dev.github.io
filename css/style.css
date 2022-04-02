@@ -28,6 +28,10 @@ a {
     color: var(--link-color);
 }
 
+section {
+    padding: 5rem 0;
+}
+
 .container {
     max-width: 1140px;
     margin: 0 auto;
@@ -38,7 +42,7 @@ h1 span {
 }
 
 button#toggle {
-    color: var(--color);
+    color: white;
     background: var(--accent-color);
 
     border: none;

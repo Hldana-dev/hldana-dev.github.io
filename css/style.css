@@ -1,0 +1,22 @@
+:root {
+    --background: hsl(0, 0%, 100%);
+    --color: hsl(0, 0%, 13%);
+    --accent-color: hsl(207, 90%, 54%);
+    --link-color: hsl(206, 100%, 39%);
+}
+
+body.dark-theme {
+    --background: hsl(225, 5%, 17%);
+    --color: hsl(240, 7%, 68%);
+    --accent-color: hwb(36 0% 0%);
+    --link-color: hwb(36 0% 0%);
+}
+
+body {
+    background: var(--background);
+    color: var(--color);
+}
+
+a {
+    color: var(--link-color);
+}

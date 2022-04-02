@@ -4,6 +4,11 @@
     --accent-color: hsl(207, 90%, 54%);
     --link-color: hsl(206, 100%, 39%);
 }
+*,*::before,::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
 
 body.dark-theme {
     --background: hsl(225, 5%, 17%);
@@ -15,8 +20,34 @@ body.dark-theme {
 body {
     background: var(--background);
     color: var(--color);
+
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 
 a {
     color: var(--link-color);
+}
+
+.container {
+    max-width: 1140px;
+    margin: 0 auto;
+}
+
+h1 span {
+    color: var(--accent-color);
+}
+
+button#toggle {
+    color: var(--color);
+    background: var(--accent-color);
+
+    border: none;
+    padding: .5rem 1rem;
+    border-radius: .25rem;
+
+    transition: all .3s ease-in-out;
+}
+
+button#toggle:hover {
+    transform: scale(1.2);
 }
